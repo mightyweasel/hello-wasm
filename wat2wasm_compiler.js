@@ -16,3 +16,5 @@ var wat_wasm = ins.map(function (inputWat) {
 
     return writeFileSync(`wasm/${inputWat}.wasm`, new Buffer(buffer));
 });
+
+// run with node wat2wasm_compiler.js
