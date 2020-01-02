@@ -1,5 +1,7 @@
 # hello-wasm
-Basic WASM examples: Add, Hello World, Call JS, and String Reverse examples
+Basic WASM examples: Add, Hello World, Call JS, and String Reverse 
+
+See it in action [hello-wasm](https://mightyweasel.github.io/hello-wasm/)
 
 # Getting it running
 
