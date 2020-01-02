@@ -31,6 +31,16 @@ python -m http.server 8888
 
 Happy hacking!
 
+# WAT about WASM?
+
+I've got a real simple .wat to .wasm setup that converts the text based wat to the binary wasm files.
+
+```bash
+node wat2wasm_compiler.js
+```
+
+Takes the examples from the /wat directory and writes .wasm files to the /wasm directory 
+
 # Sources
 
 Example code lifted and modified from [npm inline-webassembly](https://www.npmjs.com/package/inline-webassembly), bundling by [browserify](http://browserify.org/)
