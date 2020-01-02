@@ -1,0 +1,9 @@
+html,body {
+    font-family: 'Aldrich', sans-serif;
+}
+
+.owasm {
+    padding: 3px;
+    background-color: #dddddd;
+    border: 1px solid #666666;
+}
