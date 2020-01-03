@@ -5,17 +5,18 @@ See it in action [hello-wasm](https://mightyweasel.github.io/hello-wasm/)
 
 # Getting it running
 
-Get the inline webassembly package, and get browserify
+Get the inline webassembly package, and get browserify. Add wabt (part of inline-webassembly so probably can skip)
 
 ```bash
 npm install --save inline-webassembly
 npm i -g browserify
+npm install wabt
 ```
 
-Then bundle up the examples you want to test out
+Then bundle up the examples you want to test out (from the jswasm the inline examples)
 
 ```bash
-browserify add.js helloworld.js calljs.js stringreverse.js -o build/bundle.js
+browserify jswasm/add.js jswasm/helloworld.js jswasm/calljs.js jswasm/stringreverse.js -o build/bundle.js
 ```
 
 Examples include `add.js`, `helloworld.js`, `calljs.js`, and `stringreverse.js`
@@ -33,7 +34,7 @@ Happy hacking!
 
 # WAT about WASM?
 
-I've got a real simple .wat to .wasm setup that converts the text based wat to the binary wasm files.
+I've got a real simple .wat to .wasm setup that converts the text based wat to the binary wasm files. This will compile all the wat files to wasm.
 
 ```bash
 node wat2wasm_compiler.js

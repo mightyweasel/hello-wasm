@@ -14,7 +14,7 @@ var wat_wasm = ins.map(function (inputWat) {
     let wasmModule = wabt.parseWat(`wat/${inputWat}.wat`, readFileSync(`wat/${inputWat}.wat`, "utf8"));
     let { buffer } = wasmModule.toBinary({});
 
-    return writeFileSync(`wasm/${inputWat}.wasm`, new Buffer(buffer));
+    return writeFileSync(`wasm/${inputWat}.wasm`, Buffer.from(buffer));
 });
 
 // run with node wat2wasm_compiler.js
